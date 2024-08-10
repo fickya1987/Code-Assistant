@@ -57,8 +57,8 @@ with st.sidebar:
     for _ in range(17):
         st.write("") 
     st.subheader("Build By:")
-    st.write("[Pachaiappan❤️](https://github.com/Mr-Vicky-01)")
-    st.write("contact: [Email](mailto:pachaiappan1102@gamil.com)")
+    st.write("[FickyA](https://github.com/fickya1987/)")
+    st.write("contact: [Email](mailto:fickyalkarim1987@gmail.com)")
 
 if 'messages' not in st.session_state:
     st.session_state.messages = [{'role': 'assistant', 'content': "I'm Here to help your programming realted questions😉"}]

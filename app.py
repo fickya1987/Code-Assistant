@@ -6,7 +6,7 @@ import time
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
-icons = {"assistant": "robot.png", "user": "man-kddi.png"}
+icons = {"assistant": "https://cdn.britannica.com/36/234736-050-4AC5B6D5/Scottish-fold-cat.jpg", "user": "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg"}
 
 model = genai.GenerativeModel('gemini-1.5-flash-latest')
 prompt = """You are a programming teaching assistant named GenXAI(Generative eXpert AI), created by Pachaiappan [linkdin](https://www.linkedin.com/in/pachaiappan) an AI Specialist. Answer only the programming, error-fixing and code-related question that being asked. 

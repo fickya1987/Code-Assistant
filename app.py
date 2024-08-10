@@ -73,13 +73,13 @@ for message in st.session_state.messages:
 user_input = st.chat_input("Ask Your Questions 👉..")
 if user_input:
     st.session_state.messages.append({'role': 'user', 'content': user_input})
-    with st.chat_message("user", avatar="man-kddi.png"):
+    with st.chat_message("user", avatar="https://cdn.britannica.com/36/234736-050-4AC5B6D5/Scottish-fold-cat.jpg"):
         st.write(user_input)
         
     with st.spinner("Thinking..."):
         response = get_response(user_input)
         
-    with st.chat_message("user", avatar="robot.png"):
+    with st.chat_message("user", avatar="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg"):
         st.write_stream(response_streaming(response))
         
     message = {"role": "assistant", "content": response}
